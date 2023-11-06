@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="wallet.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trirong&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="kiko-wrapper">
+        <nav class="nav-bar">
+            <div class="nav-logo">
+                <div class="nav-logo-img">
+                    <img class="tree-logo" src="./img/tree-logo.svg" alt="">
+                </div>
+                <h2>Seedtree</h2>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <!-- <li><a href="#" class="hover-links"><img src="./img/money-logo.svg" alt=""></a></li> -->
+                    <li><a href="#" class="hover-links">Book a Services</a></li>
+                    <!-- <li><a href="#" class="hover-links">Work Gallery</a></li>
+                    <li><a href="#" class="hover-links">How it Works</a></li>
+                    <li><a href="#" class="hover-links">About Us</a></li>
+                    <li><a href="#" class="hover-links">Contact Us</a></li> -->
+                    <li><a href="#" class="hover-links">Login/Register</a></li>
+                    <!-- <li><a href="#" class="hover-links login-button">Login/Register</a></li> -->
+                </ul>
+            </div>
+        </nav>
+
+        <!--hero-section-->
+        <div class="main">
+            <div class="wallet-part">
+                <div class="wallet-heading"><h1>Wallet</h1></div>
+                <div class="wallet-card">
+                    <div class="wallet-card-left">
+                        <div class="wallet-card-left-text">
+                            <p>Your Balance</p>
+                            <h1>₹1081</h1>
+                        </div>
+                        <div class="wallet-card-left-btn" id="openModal">
+                            <button>Reserved amount ₹700</button>
+                        </div>
+                    </div>
+                    <div class="wallet-card-right">
+                        <div class="wallet-card-right-text">
+                            <h3>Add Money</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="wallet-logo">
+                    <div class="info-logo">
+                        <div class="info-logo-img">
+                            <img src="./img/money-logo.svg" alt="">
+                        </div>
+                        <div class="info-logo-text">
+                            <p>Escrow Protection</p>
+                        </div>
+                    </div>
+                    <div class="info-logo">
+                        <div class="info-logo-img">
+                            <img src="./img/tick-card.svg" alt="">
+                        </div>
+                        <div class="info-logo-text">
+                            <p>128-bit encryption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="tran-part">
+                <div class="tran-heading">
+                    <h1>Transaction</h1>
+                    <p>Tap to download Booking Invoice</p>
+                </div>
+                <div class="tran-feature-tabs">
+                    <button><ion-icon name="menu"></ion-icon><p>All</p></button>
+                    <button><ion-icon name="wallet-outline"></ion-icon> Add Money</button>
+                    <button><ion-icon name="wallet-outline"></ion-icon> Booking </button>
+                    <button><ion-icon name="wallet-outline"></ion-icon> Refund </button>
+                    <button><ion-icon name="wallet-outline"></ion-icon> Failed</button>
+                </div>
+                <div class="tran-card-wrapper">
+                    <div class="display-card">
+                        <div class="display-card-left">
+                            <div class="display-card-left-icon">
+                                <ion-icon name="wallet-outline"></ion-icon>
+                            </div>
+                            <div class="display-card-left-text">
+                                <h3>Booking</h3>
+                                <p>25 Jan 23 - 01:40 pm</p>
+                            </div>
+                        </div>
+                        <div class="display-card-right">
+                            <h3>-₹961</h3>
+                            <p><ion-icon name="arrow-down-outline"></ion-icon>Download</p>
+                        </div>
+                    </div>
+    
+                    <div class="display-card">
+                        <div class="display-card-left">
+                            <div class="display-card-left-icon">
+                                <ion-icon name="wallet-outline"></ion-icon>
+                            </div>
+                            <div class="display-card-left-text">
+                                <h3>Project name (M3)</h3>
+                                <p>25 Jan 23 - 01:40 pm</p>
+                            </div>
+                        </div>
+                        <div class="display-card-right">
+                            <h3>-₹961</h3>
+                            <p><ion-icon name="arrow-down-outline"></ion-icon>Download</p>
+                        </div>
+                    </div>
+    
+                    <div class="display-card">
+                        <div class="display-card-left">
+                            <div class="display-card-left-icon">
+                                <ion-icon name="wallet-outline"></ion-icon>
+                            </div>
+                            <div class="display-card-left-text">
+                                <h3>Refund</h3>
+                                <p>25 Jan 23 - 01:40 pm</p>
+                            </div>
+                        </div>
+                        <div class="display-card-right">
+                            <h3 style="color:#43AF31;">+₹961</h3>
+                        </div>
+                    </div>
+    
+                    <div class="display-card">
+                        <div class="display-card-left">
+                            <div class="display-card-left-icon">
+                                <ion-icon name="wallet-outline"></ion-icon>
+                            </div>
+                            <div class="display-card-left-text">
+                                <h3>Add Money in wallet</h3>
+                                <p>25 Jan 23 - 01:40 pm</p>
+                            </div>
+                        </div>
+                        <div class="display-card-right">
+                            <h3 style="color:#43AF31;">+₹961</h3>
+                        </div>
+                    </div>
+    
+                    <div class="display-card">
+                        <div class="display-card-left">
+                            <div class="display-card-left-icon">
+                                <ion-icon name="wallet-outline"></ion-icon>
+                            </div>
+                            <div class="display-card-left-text">
+                                <h3>Failed Transaction</h3>
+                                <p>25 Jan 23 - 01:40 pm</p>
+                            </div>
+                        </div>
+                        <div class="display-card-right">
+                            <h3 style="color:#FC6565;">+₹961</h3>
+                        </div>
+                    </div>
+    
+                    <div class="display-card">
+                        <div class="display-card-left">
+                            <div class="display-card-left-icon">
+                                <span class="icon">
+                                    <ion-icon name="wallet-outline"></ion-icon>
+                                </span>
+                            </div>
+                            <div class="display-card-left-text">
+                                <h3>Booking</h3>
+                                <p>25 Jan 23 - 01:40 pm</p>
+                            </div>
+                        </div>
+                        <div class="display-card-right">
+                            <h3>-₹961</h3>
+                            <p><ion-icon name="arrow-down-outline"></ion-icon>Download</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <nav class="bottom--nav--icons">
+        <ul>
+            <li>
+                <a href="#home">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 18V15" stroke="#919CA1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.0703 2.82L3.14027 8.37C2.36027 8.99 1.86027 10.3 2.03027 11.28L3.36027 19.24C3.60027 20.66 4.96027 21.81 6.40027 21.81H17.6003C19.0303 21.81 20.4003 20.65 20.6403 19.24L21.9703 11.28C22.1303 10.3 21.6303 8.99 20.8603 8.37L13.9303 2.83C12.8603 1.97 11.1303 1.97 10.0703 2.82Z" stroke="#919CA1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#date">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.5 2V5" stroke="#999999" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.5 2V5" stroke="#999999" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 9.09H21" stroke="#999999" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.5 8.5V17C21.5 20 20 22 16.5 22H8.5C5 22 3.5 20 3.5 17V8.5C3.5 5.5 5 3.5 8.5 3.5H16.5C20 3.5 21.5 5.5 21.5 8.5Z" stroke="#999999" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.1947 13.7H16.2037" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.1947 16.7H16.2037" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.4955 13.7H12.5045" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12.4955 16.7H12.5045" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.79431 13.7H8.80329" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M8.79431 16.7H8.80329" stroke="#999999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <span>Dates</span>
+                </a>
+            </li>
+            <li>
+                <a href="#notification">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0196 2.91C8.7096 2.91 6.0196 5.6 6.0196 8.91V11.8C6.0196 12.41 5.7596 13.34 5.4496 13.86L4.2996 15.77C3.5896 16.95 4.0796 18.26 5.3796 18.7C9.6896 20.14 14.3396 20.14 18.6496 18.7C19.8596 18.3 20.3896 16.87 19.7296 15.77L18.5796 13.86C18.2796 13.34 18.0196 12.41 18.0196 11.8V8.91C18.0196 5.61 15.3196 2.91 12.0196 2.91Z" stroke="#919CA1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                        <path d="M13.8699 3.2C13.5599 3.11 13.2399 3.04 12.9099 3C11.9499 2.88 11.0299 2.95 10.1699 3.2C10.4599 2.46 11.1799 1.94 12.0199 1.94C12.8599 1.94 13.5799 2.46 13.8699 3.2Z" stroke="#919CA1" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15.0195 19.06C15.0195 20.71 13.6695 22.06 12.0195 22.06C11.1995 22.06 10.4395 21.72 9.89953 21.18C9.35953 20.64 9.01953 19.88 9.01953 19.06" stroke="#919CA1" stroke-width="1.5" stroke-miterlimit="10"/>
+                    </svg>
+                        
+                    <span>Notification</span>
+                </a>
+            </li>
+            <li>
+                <a href="#wallet">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.033 11.2916C14.683 11.6332 14.483 12.1249 14.533 12.6499C14.608 13.5499 15.433 14.2082 16.333 14.2082H17.9163V15.1999C17.9163 16.9249 16.508 18.3333 14.783 18.3333H6.66634C8.78392 15.3323 6.51562 11.1738 2.08301 12.9166L2.08301 9.59159C2.08301 7.86659 3.49134 6.45825 5.21634 6.45825H14.783C16.508 6.45825 17.9163 7.86659 17.9163 9.59159V10.7916H16.233C15.7663 10.7916 15.3413 10.9749 15.033 11.2916Z" stroke="#516770" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.08301 10.3415V6.53324C2.08301 5.54157 2.69134 4.6582 3.61634 4.3082L10.233 1.8082C11.2663 1.41653 12.3747 2.18322 12.3747 3.29156V6.45821" stroke="#516770" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M18.7987 11.6418V13.3585C18.7987 13.8168 18.432 14.1918 17.9653 14.2085H16.332C15.432 14.2085 14.607 13.5501 14.532 12.6501C14.482 12.1251 14.682 11.6335 15.032 11.2918C15.3404 10.9751 15.7653 10.7918 16.232 10.7918H17.9653C18.432 10.8085 18.7987 11.1834 18.7987 11.6418Z" stroke="#516770" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.83301 10H11.6663" stroke="#516770" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.49967 15.8333C7.49967 16.4583 7.32467 17.05 7.01634 17.55C6.44134 18.5167 5.38301 19.1667 4.16634 19.1667C2.94967 19.1667 1.89134 18.5167 1.31634 17.55C1.00801 17.05 0.833008 16.4583 0.833008 15.8333C0.833008 13.9917 2.32467 12.5 4.16634 12.5C6.00801 12.5 7.49967 13.9917 7.49967 15.8333Z" stroke="#516770" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2.86719 15.8329L3.69219 16.6579L5.46719 15.0163" stroke="#516770" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                    <span>Wallet</span>
+                </a>
+            </li>
+            <li>
+                <a href="#profile">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.1596 10.87C12.0596 10.86 11.9396 10.86 11.8296 10.87C9.44957 10.79 7.55957 8.84 7.55957 6.44C7.55957 3.99 9.53957 2 11.9996 2C14.4496 2 16.4396 3.99 16.4396 6.44C16.4296 8.84 14.5396 10.79 12.1596 10.87Z" stroke="#919CA1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M7.15973 14.56C4.73973 16.18 4.73973 18.82 7.15973 20.43C9.90973 22.27 14.4197 22.27 17.1697 20.43C19.5897 18.81 19.5897 16.17 17.1697 14.56C14.4297 12.73 9.91973 12.73 7.15973 14.56Z" stroke="#919CA1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                                                
+                    <span>Profile</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <div class="footer-container">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <img src="./img/seedtree-white-logo.svg" alt="">
+            <h2>Seedtree</h2>
+          </div>
+          <div class="footer-text">
+            <p>Copyright © 2023 Seedtree Collaborative </br>
+              All Rights Reserved </p>
+          </div>
+        </div>
+      
+        <div class="footer-middle">
+          <ul>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                <rect y="0.5" width="40" height="40" rx="8" fill="white" fill-opacity="0.16" />
+                <path
+                  d="M21.4638 29.5V21.2894H24.3585L24.7919 18.0895H21.4637V16.0465C21.4637 15.1201 21.7339 14.4888 23.1293 14.4888L24.909 14.488V11.6261C24.6012 11.5871 23.5447 11.5 22.3157 11.5C19.7497 11.5 17.9929 12.9912 17.9929 15.7297V18.0895H15.0908V21.2894H17.9929V29.4999H21.4638V29.5Z"
+                  fill="white" />
+              </svg>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                <rect y="0.5" width="40" height="40" rx="8" fill="white" fill-opacity="0.16" />
+                <path
+                  d="M23.0271 13.2014V13.1981H23.8711L24.1794 13.2597C24.385 13.2997 24.5717 13.3521 24.7394 13.4169C24.9071 13.4818 25.0694 13.5574 25.2263 13.6439C25.3832 13.7303 25.5255 13.8184 25.6532 13.908C25.7798 13.9967 25.8934 14.0907 25.9941 14.1901C26.0936 14.2906 26.2489 14.3165 26.4599 14.2679C26.6709 14.2192 26.8981 14.1517 27.1416 14.0653C27.385 13.9788 27.6258 13.8816 27.8638 13.7735C28.1019 13.6655 28.2469 13.5968 28.2988 13.5677C28.3497 13.5374 28.3768 13.5212 28.38 13.519L28.3832 13.5142L28.3995 13.5061L28.4157 13.498L28.4319 13.4899L28.4482 13.4818L28.4514 13.4769L28.4563 13.4737L28.4612 13.4704L28.4644 13.4656L28.4806 13.4607L28.4968 13.4575L28.4936 13.4818L28.4887 13.5061L28.4806 13.5304L28.4725 13.5547L28.4644 13.5709L28.4563 13.5871L28.4482 13.6114C28.4427 13.6276 28.4373 13.6492 28.4319 13.6763C28.4265 13.7033 28.3751 13.8113 28.2777 14.0004C28.1803 14.1895 28.0586 14.3813 27.9125 14.5758C27.7665 14.7703 27.6355 14.9173 27.5198 15.0167C27.4029 15.1172 27.3255 15.1874 27.2876 15.2274C27.2498 15.2685 27.2038 15.3063 27.1497 15.3409L27.0685 15.3944L27.0523 15.4025L27.0361 15.4106L27.0328 15.4154L27.028 15.4187L27.0231 15.4219L27.0198 15.4268L27.0036 15.4349L26.9874 15.443L26.9841 15.4478L26.9793 15.4511L26.9744 15.4543L26.9711 15.4592L26.9679 15.4641L26.963 15.4673L26.9582 15.4705L26.9549 15.4754H27.0361L27.4905 15.3782C27.7935 15.3133 28.083 15.235 28.3589 15.1431L28.7971 14.9973L28.8458 14.981L28.8702 14.9729L28.8864 14.9648L28.9026 14.9567L28.9188 14.9486L28.9351 14.9405L28.9675 14.9357L29 14.9324V14.9648L28.9919 14.9681L28.9838 14.9729L28.9805 14.9778L28.9757 14.981L28.9708 14.9843L28.9675 14.9891L28.9643 14.994L28.9594 14.9973L28.9546 15.0005L28.9513 15.0054L28.9481 15.0102L28.9432 15.0135L28.9351 15.0297L28.927 15.0459L28.9221 15.0491C28.9199 15.0524 28.8512 15.1442 28.716 15.3247C28.5807 15.5062 28.5077 15.598 28.4968 15.6002C28.486 15.6034 28.4709 15.6197 28.4514 15.6488C28.433 15.6791 28.3183 15.7996 28.1073 16.0103C27.8963 16.221 27.6897 16.4085 27.4873 16.5727C27.2839 16.738 27.1811 16.9412 27.1789 17.1821C27.1757 17.422 27.1632 17.6933 27.1416 17.9958C27.1199 18.2984 27.0794 18.6252 27.0198 18.9764C26.9603 19.3276 26.8684 19.7247 26.7439 20.1677C26.6195 20.6108 26.468 21.043 26.2894 21.4644C26.1109 21.8858 25.9243 22.264 25.7295 22.599C25.5347 22.934 25.3562 23.2176 25.1939 23.4499C25.0316 23.6823 24.8666 23.9011 24.6988 24.1064C24.5311 24.3117 24.319 24.5429 24.0626 24.8001C23.8051 25.0562 23.6644 25.1967 23.6406 25.2215C23.6157 25.2453 23.5097 25.3339 23.3225 25.4873C23.1363 25.6419 22.9362 25.7964 22.7219 25.9509C22.5088 26.1043 22.3129 26.2324 22.1344 26.335C21.9558 26.4377 21.7405 26.5549 21.4884 26.6868C21.2373 26.8197 20.9657 26.9429 20.6736 27.0563C20.3814 27.1698 20.073 27.2751 19.7484 27.3724C19.4238 27.4696 19.11 27.5453 18.807 27.5993C18.5041 27.6533 18.1605 27.6992 17.7764 27.7371L17.2002 27.7938V27.8019H16.1452V27.7938L16.0072 27.7857C15.9152 27.7803 15.8395 27.7749 15.78 27.7695C15.7205 27.7641 15.4959 27.7344 15.1064 27.6803C14.7169 27.6263 14.4112 27.5723 14.1894 27.5182C13.9675 27.4642 13.6375 27.3616 13.1993 27.2103C12.761 27.059 12.3861 26.9061 12.0745 26.7516C11.7639 26.5981 11.5692 26.5009 11.4902 26.4598C11.4123 26.4199 11.3246 26.3702 11.2272 26.3107L11.0812 26.2216L11.0779 26.2167L11.073 26.2135L11.0682 26.2102L11.0649 26.2054L11.0487 26.1973L11.0325 26.1892L11.0292 26.1843L11.0243 26.1811L11.0195 26.1778L11.0162 26.173L11.013 26.1681L11.0081 26.1648H11V26.1324L11.0162 26.1357L11.0325 26.1405L11.1055 26.1486C11.1542 26.154 11.2868 26.1621 11.5032 26.173C11.7196 26.1838 11.9495 26.1838 12.193 26.173C12.4364 26.1621 12.6853 26.1378 12.9396 26.1C13.1939 26.0622 13.4941 25.9974 13.8404 25.9055C14.1867 25.8137 14.5048 25.7045 14.7948 25.5781C15.0837 25.4506 15.2893 25.3555 15.4116 25.2928C15.5327 25.2312 15.7178 25.1167 15.9666 24.9492L16.3399 24.698L16.3432 24.6931L16.3481 24.6899L16.3529 24.6866L16.3562 24.6818L16.3594 24.6769L16.3643 24.6737L16.3692 24.6704L16.3724 24.6656L16.3886 24.6607L16.4049 24.6575L16.4081 24.6413L16.413 24.625L16.4179 24.6218L16.4211 24.6169L16.2913 24.6088C16.2047 24.6034 16.1208 24.598 16.0397 24.5926C15.9585 24.5872 15.8314 24.5629 15.6583 24.5197C15.4851 24.4765 15.2985 24.4116 15.0983 24.3252C14.8981 24.2388 14.7033 24.1361 14.514 24.0172C14.3246 23.8984 14.1877 23.7995 14.1033 23.7206C14.02 23.6428 13.9118 23.5326 13.7787 23.39C13.6467 23.2463 13.532 23.0988 13.4346 22.9475C13.3372 22.7962 13.2442 22.6217 13.1555 22.4239L13.0207 22.129L13.0126 22.1046L13.0045 22.0803L12.9996 22.0641L12.9964 22.0479L13.0207 22.0512L13.0451 22.056L13.2236 22.0803C13.3427 22.0965 13.5293 22.1019 13.7836 22.0965C14.0379 22.0911 14.2137 22.0803 14.3111 22.0641C14.4085 22.0479 14.468 22.0371 14.4896 22.0317L14.5221 22.0236L14.5627 22.0155L14.6032 22.0074L14.6065 22.0025L14.6114 21.9993L14.6162 21.996L14.6195 21.9912L14.587 21.9831L14.5546 21.975L14.5221 21.9669L14.4896 21.9588L14.4572 21.9507C14.4355 21.9453 14.3977 21.9345 14.3436 21.9182C14.2895 21.902 14.1434 21.8426 13.9053 21.74C13.6673 21.6373 13.4779 21.5373 13.3372 21.4401C13.1962 21.3426 13.0618 21.2359 12.9347 21.1208C12.8081 21.0041 12.6691 20.8539 12.5176 20.6702C12.3661 20.4865 12.2308 20.2731 12.1118 20.03C11.9928 19.7868 11.9035 19.5545 11.844 19.333C11.7847 19.1128 11.7456 18.8876 11.7272 18.6604L11.6979 18.32L11.7142 18.3232L11.7304 18.3281L11.7466 18.3362L11.7628 18.3443L11.7791 18.3524L11.7953 18.3605L12.0469 18.474C12.2146 18.5496 12.4229 18.6144 12.6718 18.6685C12.9207 18.7225 13.0694 18.7522 13.1181 18.7576L13.1912 18.7657H13.3372L13.334 18.7608L13.3291 18.7576L13.3243 18.7544L13.321 18.7495L13.3178 18.7446L13.3129 18.7414L13.308 18.7382L13.3048 18.7333L13.2885 18.7252L13.2723 18.7171L13.2691 18.7122L13.2642 18.709L13.2593 18.7057L13.2561 18.7009L13.2399 18.6928L13.2236 18.6847L13.2204 18.6798C13.2171 18.6776 13.1706 18.6431 13.0808 18.5761C12.9921 18.508 12.899 18.4199 12.8016 18.3119C12.7042 18.2038 12.6069 18.0904 12.5095 17.9715C12.4119 17.8524 12.325 17.7249 12.2498 17.5906C12.174 17.4555 12.094 17.2837 12.0096 17.0752C11.9262 16.8677 11.8629 16.6586 11.8197 16.4479C11.7764 16.2372 11.752 16.0292 11.7466 15.8239C11.7412 15.6186 11.7466 15.443 11.7628 15.2971C11.7791 15.1512 11.8115 14.9864 11.8602 14.8028C11.9089 14.6191 11.9793 14.4246 12.0712 14.2192L12.2092 13.9113L12.2173 13.887L12.2254 13.8627L12.2303 13.8594L12.2335 13.8546L12.2368 13.8497L12.2417 13.8465L12.2465 13.8497L12.2498 13.8546L12.253 13.8594L12.2579 13.8627L12.2628 13.8659L12.266 13.8708L12.2693 13.8756L12.2741 13.8789L12.2822 13.8951L12.2904 13.9113L12.2952 13.9145L12.2985 13.9194L12.5176 14.1625C12.6637 14.3246 12.8368 14.5056 13.037 14.7055C13.2372 14.9054 13.3481 15.0091 13.3697 15.0167C13.3914 15.0253 13.4184 15.0502 13.4509 15.0913C13.4833 15.1312 13.5915 15.2269 13.7755 15.3782C13.9594 15.5294 14.2002 15.705 14.4977 15.9049C14.7953 16.1048 15.1253 16.302 15.4878 16.4965C15.8503 16.691 16.2399 16.8666 16.6564 17.0233C17.073 17.18 17.3652 17.2826 17.5329 17.3313C17.7006 17.3799 17.9874 17.442 18.3931 17.5177C18.7989 17.5933 19.1046 17.6419 19.3102 17.6635C19.5158 17.6851 19.6565 17.6976 19.7322 17.7008L19.8458 17.7041L19.8426 17.6797L19.8377 17.6554L19.8052 17.4528C19.7836 17.3178 19.7728 17.1287 19.7728 16.8855C19.7728 16.6424 19.7917 16.4182 19.8296 16.2129C19.8675 16.0076 19.9243 15.7996 20 15.5889C20.0757 15.3782 20.1499 15.209 20.2224 15.0815C20.296 14.9551 20.3923 14.8109 20.5113 14.6488C20.6303 14.4867 20.7845 14.3192 20.9739 14.1463C21.1632 13.9734 21.3796 13.8194 21.6231 13.6844C21.8665 13.5493 22.0911 13.4466 22.2967 13.3764C22.5023 13.3062 22.6754 13.2602 22.8161 13.2386C22.9567 13.217 23.0271 13.2046 23.0271 13.2014Z"
+                  fill="white" />
+              </svg>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                <rect y="0.5" width="40" height="40" rx="8" fill="white" fill-opacity="0.16" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M11 20.5C11 16.9049 11 15.1073 11.8567 13.8126C12.2392 13.2344 12.7344 12.7392 13.3126 12.3567C14.6073 11.5 16.4049 11.5 20 11.5C23.5951 11.5 25.3927 11.5 26.6874 12.3567C27.2656 12.7392 27.7608 13.2344 28.1433 13.8126C29 15.1073 29 16.9049 29 20.5C29 24.0951 29 25.8927 28.1433 27.1874C27.7608 27.7656 27.2656 28.2608 26.6874 28.6433C25.3927 29.5 23.5951 29.5 20 29.5C16.4049 29.5 14.6073 29.5 13.3126 28.6433C12.7344 28.2608 12.2392 27.7656 11.8567 27.1874C11 25.8927 11 24.0951 11 20.5ZM24.6593 20.5002C24.6593 23.0735 22.5732 25.1596 19.9998 25.1596C17.4265 25.1596 15.3404 23.0735 15.3404 20.5002C15.3404 17.9269 17.4265 15.8408 19.9998 15.8408C22.5732 15.8408 24.6593 17.9269 24.6593 20.5002ZM19.9998 23.5832C21.7025 23.5832 23.0828 22.2029 23.0828 20.5002C23.0828 18.7975 21.7025 17.4172 19.9998 17.4172C18.2971 17.4172 16.9168 18.7975 16.9168 20.5002C16.9168 22.2029 18.2971 23.5832 19.9998 23.5832ZM24.8433 16.7015C25.4479 16.7015 25.9381 16.2114 25.9381 15.6067C25.9381 15.0021 25.4479 14.5119 24.8433 14.5119C24.2386 14.5119 23.7485 15.0021 23.7485 15.6067C23.7485 16.2114 24.2386 16.7015 24.8433 16.7015Z"
+                  fill="white" />
+              </svg>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                <rect y="0.5" width="40" height="40" rx="8" fill="white" fill-opacity="0.16" />
+                <path
+                  d="M11 13.9199C11 13.3427 11.2027 12.8665 11.6081 12.4913C12.0135 12.1162 12.5405 11.9286 13.1892 11.9286C13.8263 11.9286 14.3417 12.1133 14.7355 12.4827C15.1409 12.8636 15.3436 13.36 15.3436 13.9719C15.3436 14.526 15.1467 14.9877 14.7529 15.3571C14.3475 15.7381 13.8147 15.9286 13.1544 15.9286H13.1371C12.5 15.9286 11.9846 15.7381 11.5907 15.3571C11.1969 14.9762 11 14.4971 11 13.9199ZM11.2259 29.0714V17.5043H15.083V29.0714H11.2259ZM17.2201 29.0714H21.0772V22.6126C21.0772 22.2085 21.1236 21.8968 21.2162 21.6775C21.3784 21.285 21.6245 20.9531 21.9546 20.6818C22.2847 20.4105 22.6988 20.2749 23.1969 20.2749C24.4942 20.2749 25.1429 21.1465 25.1429 22.8896V29.0714H29V22.4394C29 20.7309 28.5946 19.4351 27.7838 18.5519C26.973 17.6688 25.9015 17.2273 24.5695 17.2273C23.0753 17.2273 21.9112 17.868 21.0772 19.1493V19.184H21.0598L21.0772 19.1493V17.5043H17.2201C17.2432 17.8737 17.2548 19.0224 17.2548 20.9502C17.2548 22.8781 17.2432 25.5851 17.2201 29.0714Z"
+                  fill="white" />
+              </svg>
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="41" viewBox="0 0 40 41" fill="none">
+                <rect y="0.5" width="40" height="40" rx="8" fill="white" fill-opacity="0.16" />
+                <path
+                  d="M20.4383 27.4799L16.3761 27.404C15.0608 27.3775 13.7423 27.4303 12.4528 27.1563C10.4913 26.7468 10.3523 24.7389 10.2069 23.0546C10.0065 20.6868 10.0841 18.2759 10.4622 15.9279C10.6757 14.6104 11.5157 13.8242 12.8148 13.7386C17.2001 13.4282 21.6146 13.465 25.9903 13.6098C26.4524 13.6231 26.9177 13.6957 27.3734 13.7783C29.6227 14.1812 29.6775 16.4566 29.8233 18.372C29.9688 20.3073 29.9074 22.2524 29.6294 24.1745C29.4065 25.7659 28.9798 27.1004 27.1795 27.2292C24.9237 27.3977 22.7197 27.5333 20.4576 27.4901C20.4577 27.4799 20.4447 27.4799 20.4383 27.4799ZM18.0501 23.4509C19.75 22.4535 21.4175 21.4727 23.1076 20.482C21.4046 19.4846 19.7403 18.5038 18.0501 17.5131V23.4509Z"
+                  fill="white" />
+              </svg>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <a href="#"><img src="./img/Google Play - eng.svg" alt=""></a>
+          <a href="#"><img src="./img/App Store - eng.svg" alt=""></a>
+        </div>
+      </div>
+
+
+      <div id="myModal" class="riya-modal">
+        <div class="riya-modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <div class="modal-text">
+                <h2>Reserved amount ₹700</h2>
+                <p>Reserved amount is under escrow payment protection. In case of “not satisfied” with service, we add your reserved to
+                    your Wallet
+                </p>
+            </div>
+            <div class="riya-modal-logo">
+                <div class="riya-modal-logo-img">
+                    <img src="./img/money-logo.svg" alt="">
+                </div>
+                <div class="riya-modal-logo-text">
+                    <p>Escrow Protection</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        var modal = document.getElementById("myModal");
+        var btn = document.getElementById("openModal");
+        var span = document.getElementById("closeModal");
+
+        btn.onclick = function () {
+            modal.style.display = "flex";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

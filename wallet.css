@@ -1,0 +1,577 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+    max-width: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.kiko-wrapper {
+    background-color: #FFFFFF;
+    height: auto;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 16px;
+    background-color: white;
+    border-radius: 2px;
+    height: 56px;
+    padding: 8px 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tree-logo img {
+    width: 57px;
+    height: 40px;
+}
+
+.nav-logo h2 {
+    margin: 0;
+    color: #166B8E;
+
+    font-family: "Jost";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.nav-links img {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+}
+
+.nav-links ul {
+    display: flex;
+    column-gap: 12px;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-links li {
+    color: #2D3639;
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.hover-links {
+    color: black;
+    transition: 0.5s ease-out;
+    text-decoration: none;
+}
+
+.hover-links:hover {
+    color: #166B8E;
+}
+
+.login-button {
+    display: flex;
+    height: 40px;
+    padding: 0px 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 43px;
+    border: 1px solid #166B8E;
+}
+
+.login-button:hover {
+    background-color: #166B8E;
+    color: white;
+}
+
+
+.main {
+    margin: 10px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    column-gap: 24px;
+}
+.wallet-part {
+    width: 588px;
+    height: 394px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+.wallet-heading h1 {
+    font-family: "Jost";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #2D3639;
+}
+.wallet-card {
+    height: 253px;
+    background: linear-gradient(to left, #71C3CB, #166B8E);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.wallet-card-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+}
+.wallet-card-left-text p{
+    color: white;
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.wallet-card-left-text h1{
+    color: white;
+    font-family: "Jost";
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.wallet-card-left-btn button {
+    border-radius: 16px;
+    font-family: "Hanken Grotesk";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #F4A261;
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+}
+.wallet-card-right {
+    width: 97px;
+    height: 205px;
+    border-radius: 16px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 16px;
+}
+.wallet-card-right-text {
+    padding: 24px;
+}
+.wallet-card-right-text h3{
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #166B8E;
+}
+.wallet-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+}
+.info-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info-logo-img {
+    width: 48px;
+    height: 48px;
+    background-color: #F4F9FB;
+    border-radius: 50%;
+}
+.info-logo-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info-logo-text p{
+    font-family: "Hanken Grotesk";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #516770;
+}
+.tran-part {
+    width: 588px;
+    height: 582px;
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 24px;
+}
+.tran-heading h1 {
+    font-family: "Jost";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #2D3639;
+}
+.tran-heading p {
+    display: none;
+}
+.tran-feature-tabs {
+    display: flex;
+    justify-content: space-around;
+}
+.tran-feature-tabs button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    padding: 4px 12px;
+    border-radius: 46px;
+    border: 1px solid gray;
+    background-color: white;
+    cursor: pointer;
+}
+.tran-feature-tabs ion-icon{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: #516770;
+}
+.tran-feature-tabs p{
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #516770;
+}
+.tran-feature-tabs button:hover {
+    background-color: #ACDCE1;
+}
+
+
+.tran-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin: 0 15px;
+}
+.display-card {
+    display: flex;
+    flex-direction: row;
+    border-radius: 16px;
+    background-color: #F4F9FB;
+    padding: 4px 16px; 
+    justify-content: space-between;
+}
+.display-card-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 8px;
+}
+.display-card-left-icon {
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    background-color: #DAEBF1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.display-card-left-icon ion-icon{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    color: #166B8E;
+}
+.display-card-left-text {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.display-card-left-text h3{
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #2D3639;
+}
+.display-card-left-text p{
+    font-family: "Hanken Grotesk";
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #919CA1;
+}
+.display-card-right {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+.display-card-right h3{
+    font-family: "Hanken Grotesk";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: right;
+    color: #2D3639;
+}
+.display-card-right p{
+    display: flex;
+    font-family: "Hanken Grotesk";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #919CA1;
+}
+
+.bottom--nav--icons {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer-container {
+    min-height: 185px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    align-items: center;
+    justify-content: space-between;
+    background: #2D3639;
+}
+
+.footer-logo {
+    display: flex;
+}
+
+.footer-logo img {
+    width: 100%;
+    max-width: 64px;
+    height: auto;
+}
+
+.footer-logo h2 {
+    color: #FFF;
+    padding: 12px 8px 0px;
+    font-family: "Jost";
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.footer-text {
+    max-width: 100%;
+    color: #FFF;
+}
+
+.footer-middle ul {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.footer-middle li {
+    width: 40px;
+    height: 40px;
+    fill: rgba(255, 255, 255, 0.16);
+    cursor: pointer;
+    list-style: none;
+}
+
+.footer-right img {
+    width: 100%;
+    max-width: 184px;
+    height: auto;
+}
+
+
+.riya-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.riya-modal-content {
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+}
+
+.close {
+    align-self: last baseline;
+    cursor: pointer;
+}
+.riya-modal-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-bar {
+        display: none;
+    }
+    .main {
+        margin: 40px 5px 0px;
+    }
+
+    
+    .tran-part {
+        margin: 20px auto 0px;
+        display: flex;
+        flex-flow: column wrap;
+        row-gap: 24px;        
+        border-top-left-radius: 32px;
+        border-top-right-radius: 32px;
+        background-color: #F4F9FB;
+        padding: 16px 0px 0px;
+    }
+    .tran-heading {
+        padding: 5px 20px;
+    }
+    .tran-heading p {
+        display: inline;
+        font-family: "Hanken Grotesk";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 14px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #919CA1;
+    }
+    .tran-f
+    .tran-feature-tabs {
+        padding: 2px 15px;
+    }
+    .bottom--nav--icons {
+        display: block;
+        padding: 10px 24px;
+        height: auto;
+        width: 100%;
+        box-shadow: 0px -4px 20px 0px #0B354714;
+    }
+    
+    .bottom--nav--icons ul {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .bottom--nav--icons ul li a {
+        font-family: "Hanken Grotesk";
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 15px;
+        letter-spacing: 0em;
+        text-align: center;
+        text-decoration: none;
+        color: #166B8E;
+        line-height: 1;
+        vertical-align: middle;
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        padding: 8px;
+        transition: 0.6s ease-in-out;
+    }
+    
+    .bottom--nav--icons ul li a span {
+        display: inline-block;
+        overflow: hidden;
+        max-width: 0;
+        opacity: 0;
+        padding-left: 0.5em;
+        transform: translate3d(-0.5em, 0, 0);
+        transition: opacity 0.6s, max-width 0.6s, transform 0.6s;
+        transition-timing-function: ease-in-out;
+    }
+    
+    .bottom--nav--icons ul li a:hover,
+    .bottom--nav--icons ul li a.is-active {
+        color: #166B8E;
+        background-color: #F4F9FB;
+    }
+    
+    .bottom--nav--icons ul li a:hover span,
+    .bottom--nav--icons ul li a.is-active span {
+        opacity: 1;
+        max-width: 84px;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .footer-container {
+        display: none;
+    }
+}
+  
+
